@@ -237,5 +237,13 @@
     </footer>
 
     <script src="assets/js/main.js" defer></script>
+    <!-- n8n chat bot (Brian) -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+        createChat({
+            webhookUrl: 'https://digitaljetplus.app.n8n.cloud/webhook/6addb692-4c01-4bd9-838e-dfebce19e635/chat'
+        });
+    </script>
 </body>
 </html>
